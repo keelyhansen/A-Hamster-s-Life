@@ -1,3 +1,11 @@
+
+/*****************************************************************************
+// File Name : FallDamage
+// Author : Keely J.Hansen
+// Creation Date : April 22, 2025
+//
+// Brief Description : This script is meant to have the player take damage when they fall down 
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -14,7 +22,10 @@ public class FallDamage : MonoBehaviour
     private Rigidbody rb;
 
     private Animator animator;
-
+    /// <summary>
+    /// I called a lot of ground methods to see if the player was touching the ground and this method is meant to take damage based on the range that you are from the ground so if you are close 
+    /// to the ground you won't get hurt but if you are far up then you take damage 
+    /// </summary>
     private void Awake()
     {
        // animator = GetComponent<Animator>();
@@ -33,7 +44,10 @@ public class FallDamage : MonoBehaviour
                 Debug.Log("Damage Dealt: " + damage);
             }
         }
-       // animator.SetBool("grounded", grounded);
+       ///Code that I plan on keeping to look through to figure out my problem with the collision method 
+        
+        
+        // animator.SetBool("grounded", grounded);
     }
     /*private void OnCollisionEnter(Collision col)
     {

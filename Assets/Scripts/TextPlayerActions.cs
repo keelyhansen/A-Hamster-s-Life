@@ -1,4 +1,10 @@
-using System.Collections;
+/*****************************************************************************
+// File Name : TextPlayerAction
+// Author : Keely J.Hansen
+// Creation Date : April 22, 2025
+//
+// Brief Description : this script is not currently being used because I keep on have a few errors while working through it but it is able to make the doors open with the "E" key once fixed
+*****************************************************************************/using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;

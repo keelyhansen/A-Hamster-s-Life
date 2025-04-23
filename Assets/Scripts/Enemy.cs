@@ -1,3 +1,11 @@
+
+/*****************************************************************************
+// File Name : Enemy
+// Author : Keely J.Hansen
+// Creation Date : April 22, 2025
+//
+// Brief Description : this is the Ai factor of the enemy, it allows the movement responce of enemy and what it is looking for 
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,13 +25,18 @@ public class Enemy : MonoBehaviour
     public GameObject Target;
 
     private bool seePlayer;
-    // Start is called before the first frame update
+    /// <summary>
+    /// we have the range speed of the enemy in the start here, it is the maximum speed that athe enemy can go 
+    /// </summary>
     void Start()
     {
         Speed = 7f;
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// In the update is where the actual code is being used, it allows the enemy to navigate towrds the player if it is sce4en in a specific distance/ range, where it is supposed to go if it doesn't see the player
+    /// and so on , it makes the enemy move in general and what it is meant to do if it actually seeas the enemy
+    /// </summary>
     void Update()
     {
         if (seePlayer) 
