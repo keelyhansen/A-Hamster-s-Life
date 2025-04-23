@@ -13,7 +13,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerInput playerInput;
-    [SerializeField] private float playerSpeed = 10f;
+    [SerializeField] private float playerSpeed = 20f;
+    
 
     private Rigidbody rb;
     private Vector3 playerMovement;
@@ -44,4 +45,5 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector3(playerMovement.x, rb.velocity.y, playerMovement.z);
     }
+   
 }

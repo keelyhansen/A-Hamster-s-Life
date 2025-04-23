@@ -14,11 +14,12 @@ public class FollowPlayer : MonoBehaviour
    
     [SerializeField] private GameObject player;
     [SerializeField] private Vector3 offset;
+    public float rotationSpeed = 100f;
 
     
     void Start()
     {
-        offset = new Vector3(90, 152, -153);
+        offset = new Vector3(70, 154, -155);
     }
 
     /// <summary>
@@ -27,6 +28,13 @@ public class FollowPlayer : MonoBehaviour
 
     void Update()
     {
+        //float horizontalInput = Input.GetAxis("Horizontal");
+        //float verticalInput = Input.GetAxis("Vertical");
+
+
+       // transform.Rotate(Vector3.up, horizontalInput * rotationSpeed * Time.deltaTime);
+        //transform.Rotate(Vector3.right,  -verticalInput * rotationSpeed * Time.deltaTime);
+
         transform.position = player.transform.position + offset;
     }
 }
